@@ -1,0 +1,14 @@
+[menu]
+background                = "#0A0806"
+background-alpha          = 1.0
+text                      = "#d4cab0"
+border                    = "rgb(83b48c) rgb(EC2957) 90deg"
+border-alpha              = 1.0
+scrim                     = "#0A0806"
+scrim-alpha               = 0.6
+selected-background       = "#3f5b52"
+selected-background-alpha = 1.0
+selected-text             = "#e9ddc1"
+selected-border           = "rgb(83b48c)"
+selected-border-alpha     = 1.0
+selected-border-width     = 2

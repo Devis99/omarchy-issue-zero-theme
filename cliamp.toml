@@ -1,0 +1,9 @@
+# cliamp theme - Issue Zero
+# Installed by THPM to ~/.config/cliamp/themes/omarchy.toml
+# thpm:cliamp-use-native
+accent = "#EC2957"
+bright_fg = "#e9ddc1"
+fg = "#8E867C"
+green = "#83b48c"
+yellow = "#e1d3af"
+red = "#EC2957"
