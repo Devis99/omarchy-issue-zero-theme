@@ -13,6 +13,8 @@
 
     /* Reference palette: black page, paper line, sage, pink. */
     --machine-void: #020000;
+    --machine-page: #0a0806;
+    --machine-sage: #3f5b52;
     --machine-black: #11100d;
     --machine-panel: #201f1b;
     --machine-panel-raised: #2c2b26;
@@ -34,8 +36,8 @@
     --code-font: "JetBrainsMono Nerd Font";
     font-weight: 400;
     --gap: 8px;
-    --divider-thickness: 1px;
-    --border-thickness: 1px;
+    --divider-thickness: 2px;
+    --border-thickness: 2px;
     --animations: off;
     --list-item-transition: 0.12s ease;
     --top-bar-height: var(--gap);
@@ -49,14 +51,13 @@
     --transparency-tweaks: off;
     --remove-bg-layer: off;
     --panel-blur: off;
-    --unrounding: on;
     --small-user-panel: on;
     --panel-labels: on;
     --label-color: var(--machine-steel);
 
     /* Midnight color system */
     --colors: on;
-    --text-0: var(--machine-white);
+    --text-0: var(--machine-black);
     --text-1: var(--machine-white);
     --text-2: var(--page-human);
     --text-3: var(--page-human);
@@ -72,10 +73,10 @@
     --message-hover: rgba(246, 234, 204, 0.035);
     --accent-1: var(--machine-white);
     --accent-2: var(--machine-signal);
-    /* Midnight fills buttons with accent-3/4/5: no fill and no border, only a faint paper tint on hover and click. */
-    --accent-3: transparent;
-    --accent-4: rgba(246, 234, 204, 0.08);
-    --accent-5: rgba(246, 234, 204, 0.14);
+    /* Midnight fills buttons with accent-3/4/5: solid pink with dark text, lighter on hover and click. */
+    --accent-3: var(--machine-signal);
+    --accent-4: #f06087;
+    --accent-5: #ec6a8a;
     --accent-new: var(--machine-red);
     --mention: rgba(236, 41, 87, 0.12);
     --mention-hover: rgba(236, 41, 87, 0.18);
@@ -91,8 +92,8 @@
     --red-1: #f06087;
     --red-2: var(--machine-red);
     --red-3: #f25b84;
-    --red-4: #383322;
-    --red-5: #201d11;
+    --red-4: #ec6a8a;
+    --red-5: #ec2957;
     --green-1: #accdb7;
     --green-2: #83b48c;
     --green-3: #83b48c;
@@ -100,7 +101,7 @@
     --green-5: #1d1c1b;
     --blue-1: #9db5a9;
     --blue-2: #7c9a8b;
-    --blue-3: #5b7a6b;
+    --blue-3: #7c9a8b;
     --blue-4: #302d22;
     --blue-5: #1f1d13;
     --yellow-1: var(--machine-signal-bright);
@@ -161,48 +162,23 @@
     --channels-default: var(--machine-steel);
     --channel-icon: var(--machine-paper);
     --brand-500: var(--machine-signal);
-    --brand-560: var(--machine-white);
-    --brand-600: #baad9d;
+    --brand-560: #f06087;
+    --brand-600: #ec6a8a;
     --control-brand-foreground: var(--machine-signal);
     --control-brand-foreground-new: var(--machine-signal);
-    --button-filled-brand-background: transparent;
-    --button-filled-brand-background-hover: rgba(246, 234, 204, 0.08);
-    --button-filled-brand-text: var(--machine-white);
-    --button-positive-background: transparent;
-    /* text and icons on the dark accent buttons */
-    --control-primary-icon-default: var(--machine-white);
-    --control-primary-icon-hover: var(--machine-white);
-    --control-primary-icon-active: var(--machine-white);
-    --control-primary-text-default: var(--machine-white);
-    --control-primary-text-hover: var(--machine-white);
-    --control-primary-text-active: var(--machine-white);
-    --control-connect-icon-default: var(--machine-white);
-    --control-connect-icon-hover: var(--machine-white);
-    --control-connect-icon-active: var(--machine-white);
-    --control-connect-text-default: var(--machine-white);
-    --control-connect-text-hover: var(--machine-white);
-    --control-connect-text-active: var(--machine-white);
     --button-danger-background: var(--machine-red);
     --info-warning-foreground: var(--machine-signal);
     --status-positive: #accdb7;
     --status-warning: var(--machine-signal);
     --status-danger: var(--machine-red);
     --status-success: #accdb7;
-    --border-subtle: rgba(246, 234, 204, 0.14);
+    --border-subtle: var(--machine-paper);
     --input-background: var(--machine-panel);
     --input-border: var(--machine-line);
     --scrollbar-thin-thumb: rgba(246, 234, 204, 0.35);
     --scrollbar-auto-thumb: rgba(246, 234, 204, 0.35);
     --scrollbar-thin-track: transparent;
     --scrollbar-auto-track: transparent;
-
-    /* Square corners */
-    --radius-xs: 0px;
-    --radius-sm: 0px;
-    --radius-md: 0px;
-    --radius-lg: 0px;
-    --radius-xl: 0px;
-    --radius-xxl: 0px;
 }
 
 /* Selected text: a quiet paper tint, never dark text on a dark fill. */
@@ -217,9 +193,10 @@ body,
 [class*="appMount"],
 [class*="bg_"],
 [class*="base_"] {
-    background-color: var(--machine-black) !important;
+    background-color: var(--machine-page) !important;
 }
 
+/* Comic panels: paper frames with black gutters, like the wallpapers. */
 :is(
     .guilds_c48ade,
     .wrapper_ef3116,
@@ -233,13 +210,12 @@ body,
 ) {
     background-color: var(--machine-black) !important;
     background-image: none !important;
-    border-color: rgba(246, 234, 204, 0.18) !important;
+    border-color: var(--border-subtle) !important;
 }
 
 /* State rail: selected and unread channels. */
 :is(a[data-list-item-id^="channels___"], [class*="containerDefault"], [class*="voiceChannelButton"]) {
-    border-left: 2px solid transparent !important;
-    border-radius: 0 !important;
+    border-left: 3px solid transparent !important;
 }
 
 :is(a[data-list-item-id^="channels___"], [class*="containerDefault"], [class*="voiceChannelButton"]):hover {
@@ -260,7 +236,6 @@ body,
 :is([class*="unreadBar"], [class*="unreadPill"], [class*="numberBadge"], [class*="textBadge"]) {
     background: var(--machine-signal) !important;
     color: var(--machine-black) !important;
-    border-radius: 0 !important;
 }
 
 /* Thin paper line below channel header and composer. */
@@ -271,7 +246,6 @@ body,
 
 :is([class*="form_"], [class*="channelTextArea"], [class*="scrollableContainer"]) {
     background: var(--machine-panel) !important;
-    border-radius: 0 !important;
 }
 
 :is([class*="channelTextArea"], [class*="searchBar"], input, textarea):focus-within,
@@ -287,18 +261,19 @@ body,
 
 [class*="mentioned"] {
     background: var(--mention) !important;
-    box-shadow: inset 2px 0 0 #e1d3af !important;
+    box-shadow: inset 3px 0 0 var(--machine-signal) !important;
 }
 
 :is([class*="messageContent"], [class*="markup"]) a {
     color: var(--machine-signal-bright) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
 }
 
 :is([class*="messageContent"], [class*="markup"]) [class*="mention"] {
     color: #f3e7c6 !important;
     background: rgba(236, 41, 87, 0.10) !important;
     border: 1px solid rgba(236, 41, 87, 0.30) !important;
-    border-radius: 0 !important;
 }
 
 /* Timestamps stay legible but quiet, never pink. */
@@ -311,31 +286,13 @@ body,
 /* System-looking code and cards. */
 :is(code, pre, [class*="codeContainer"], [class*="embedFull"]) {
     background: var(--machine-panel-raised) !important;
-    border: 1px solid rgba(246, 234, 204, 0.14) !important;
-    border-left: 2px solid var(--green-2) !important;
-    border-radius: 0 !important;
+    border: 1px solid var(--border) !important;
+    border-left: 3px solid var(--green-2) !important;
 }
 
 :is([class*="cardPrimary"], [class*="card_"]) {
     background: var(--machine-panel) !important;
     border: 1px solid var(--border-light) !important;
-}
-
-/* Buttons stay flat. Hover must not replace state color. */
-:is(button, [role="button"]):not([class*="lookLink"]):not([class*="lookFilled"]):not([class*="colorBrand"]):hover {
-    background: var(--machine-black) !important;
-    background-image: none !important;
-    border-color: var(--border-hover) !important;
-    color: var(--machine-paper) !important;
-    filter: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-}
-
-:is(button, [role="button"]):not([class*="lookLink"]):not([class*="lookFilled"]):not([class*="colorBrand"]):hover :is(svg, [class*="icon"]) {
-    color: var(--machine-paper) !important;
-    fill: currentColor !important;
-    opacity: 1 !important;
 }
 
 /* Header actions stay flat. */
@@ -356,40 +313,21 @@ body,
     fill: currentColor !important;
 }
 
-:is([class*="lookFilled"], [class*="button"])[class*="colorBrand"] {
-    background: transparent !important;
-    color: var(--machine-white) !important;
-    border: none !important;
-    border-radius: 0 !important;
-}
-
-:is([class*="lookFilled"], [class*="button"])[class*="colorBrand"]:hover {
-    background: rgba(246, 234, 204, 0.08) !important;
-    color: var(--machine-white) !important;
-    filter: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-}
-
 /* Member list divider and quiet group labels. */
 :is([class*="membersWrap"], [class*="members_"]) {
-    border-left: 1px solid rgba(246, 234, 204, 0.28) !important;
+    border-left: 2px solid var(--border-subtle) !important;
 }
 
 [class*="membersGroup"] {
     color: var(--machine-steel) !important;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-/* Popouts, menus, and modals use hard edges instead of soft cards. */
+/* Popouts, menus, and modals get a paper frame and a hard offset shadow. */
 :is([class*="popout_"], [class*="menu_"], [class*="modal_"], [role="dialog"]) {
-    border: 1px solid rgba(246, 234, 204, 0.30) !important;
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45) !important;
-}
-
-/* Square corners across controls, cards, and avatars. */
-:is(button, [role="button"], [class*="menu"], [class*="popout"], [class*="modal"], [class*="itemCard"], [class*="folderIconWrapper"]) {
-    border-radius: 0 !important;
+    border: 2px solid var(--machine-paper) !important;
+    box-shadow: 4px 4px 0 var(--machine-sage) !important;
 }
 
 /* Focus rings; no glow everywhere. */
@@ -397,12 +335,6 @@ body,
     outline: 1px solid var(--border-hover) !important;
     outline-offset: 1px;
     box-shadow: 0 0 0 3px rgba(246, 234, 204, 0.12) !important;
-}
-
-*,
-*::before,
-*::after {
-    border-radius: 0 !important;
 }
 
 * {
