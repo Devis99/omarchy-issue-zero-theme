@@ -77,42 +77,42 @@ body {
     --accent-2: var(--machine-signal);
     /* Midnight fills buttons with accent-3/4/5: solid pink with dark text, lighter on hover and click. */
     --accent-3: var(--machine-signal);
-    --accent-4: #f06087;
-    --accent-5: #ec6a8a;
+    --accent-4: #f85685;
+    --accent-5: #fb5886;
     --accent-new: var(--machine-red);
     --mention: rgba(236, 41, 87, 0.12);
     --mention-hover: rgba(236, 41, 87, 0.18);
-    --online: #accdb7;
+    --online: #9cd3af;
     --dnd: var(--machine-red);
-    --idle: #e1d3af;
+    --idle: #e9d297;
     --streaming: #ada490;
     --offline: var(--machine-steel);
     --border-light: rgba(246, 234, 204, 0.12);
     --border: rgba(246, 234, 204, 0.28);
     --border-hover: rgba(246, 234, 204, 0.60);
     --button-border: transparent;
-    --red-1: #f06087;
+    --red-1: #f85685;
     --red-2: var(--machine-red);
     --red-3: #f25b84;
-    --red-4: #ec6a8a;
+    --red-4: #fb5886;
     --red-5: #ec2957;
-    --green-1: #accdb7;
-    --green-2: #83b48c;
-    --green-3: #83b48c;
+    --green-1: #9cd3af;
+    --green-2: #6abb7d;
+    --green-3: #6abb7d;
     --green-4: #2d2d2b;
     --green-5: #1d1c1b;
-    --blue-1: #9db5a9;
-    --blue-2: #7c9a8b;
-    --blue-3: #7c9a8b;
+    --blue-1: #8fb9a5;
+    --blue-2: #6b9f87;
+    --blue-3: #6b9f87;
     --blue-4: #302d22;
     --blue-5: #1f1d13;
     --yellow-1: var(--machine-signal-bright);
-    --yellow-2: #e1d3af;
+    --yellow-2: #e9d297;
     --yellow-3: #baad9d;
     --yellow-4: #363226;
     --yellow-5: #1f1d14;
-    --purple-1: #f18ea7;
-    --purple-2: #ec6a8a;
+    --purple-1: #ff76a3;
+    --purple-2: #fb5886;
     --purple-3: #ed497a;
     --purple-4: #373323;
     --purple-5: #201d13;
@@ -164,16 +164,16 @@ body {
     --channels-default: var(--machine-steel);
     --channel-icon: var(--machine-paper);
     --brand-500: var(--machine-signal);
-    --brand-560: #f06087;
-    --brand-600: #ec6a8a;
+    --brand-560: #f85685;
+    --brand-600: #fb5886;
     --control-brand-foreground: var(--machine-signal);
     --control-brand-foreground-new: var(--machine-signal);
     --button-danger-background: var(--machine-red);
     --info-warning-foreground: var(--machine-signal);
-    --status-positive: #accdb7;
+    --status-positive: #9cd3af;
     --status-warning: var(--machine-signal);
     --status-danger: var(--machine-red);
-    --status-success: #accdb7;
+    --status-success: #9cd3af;
     --border-subtle: var(--machine-paper);
     --input-background: var(--machine-panel);
     --input-border: var(--machine-line);
@@ -277,7 +277,7 @@ body,
 }
 
 :is([class*="messageContent"], [class*="markup"]) [class*="mention"] {
-    color: #f3e7c6 !important;
+    color: #fae6b0 !important;
     background: rgba(236, 41, 87, 0.10) !important;
     border: 1px solid rgba(236, 41, 87, 0.30) !important;
 }

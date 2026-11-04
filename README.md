@@ -23,7 +23,7 @@ omarchy theme install https://github.com/Devis99/omarchy-issue-zero-theme
 
 ## Palette
 
-The palette is sage greens, warm blacks and cream paper, with hot pink as the single loud colour. The sage greens are measured from the finished wallpapers, so the interface and the art match. There are no blues or purples: the terminal colours are one family of sages, creams and pinks, separated by lightness.
+The palette is sage greens, warm blacks and cream paper, with hot pink as the loudest colour. The sage greens take their shade from the finished wallpapers, a notch stronger so they hold up next to the pink. There are no blues or purples: the terminal colours are one family of sages, creams and pinks, separated by lightness.
 
 It is a dark theme with soft text and very few colours. Text sits below the usual brightness on purpose, so the page stays comfortable at night and the pink keeps its punch.
 

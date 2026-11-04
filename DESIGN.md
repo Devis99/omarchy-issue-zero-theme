@@ -11,7 +11,7 @@ A comic page at night. Issue Zero should feel graphic, tense and a little darkly
 | Page | `#0A0806`, `#11100D` | Wallpaper page, menus, window ground |
 | Paper | `#F6EACC` | Panel lines and moons in the wallpapers |
 | Ink on paper | `#D4CAB0`, `#E9DDC1` | Body text, and text on selected rows |
-| City | `#83B48C`, `#3F5B52` | Terminal green, selected row, borders |
+| City | `#6ABB7D`, `#3F5B52` | Terminal green, selected row, borders. Same shade as the wallpapers' sage `#83B48C`, a notch stronger |
 | Hot pink | `#EC2957` | The accent: errors, current state, the lower end of the window border |
 
 ## Rules for pink
