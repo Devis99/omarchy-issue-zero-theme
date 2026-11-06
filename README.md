@@ -39,7 +39,7 @@ All wallpapers are 3840x2160, generated with AI (Codex image generation) in a fl
   </tr>
   <tr>
     <td><img src="backgrounds/04-crack.png" alt="A panel split by a jagged crack, with a tall building above and a woman on the street below"><br><sub>04 Crack</sub></td>
-    <td><img src="backgrounds/05-eye.png" alt="A giant pink eye over a city street, with a small panel of a woman on a fire escape"><br><sub>05 Eye</sub></td>
+    <td><img src="backgrounds/05-eye.png" alt="A colossal black creature filling the night sky, its single pink slit eye glowing over a city street, with a small panel of a woman on a fire escape"><br><sub>05 Eye</sub></td>
     <td><img src="backgrounds/06-blinds.png" alt="Four tall panels of an office at night, a woman at a window with a scaly monster passing outside against a pink sky"><br><sub>06 Blinds</sub></td>
   </tr>
   <tr>

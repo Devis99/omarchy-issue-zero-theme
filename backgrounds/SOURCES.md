@@ -10,6 +10,6 @@ The figure and creatures are original to this theme.
 | 02-tower.png | A water tower against the moon in one tall panel; a rooftop railing and the figure in two small panels |
 | 03-overpass.png | Three stacked strips: street lamps, a huge clawed foot among overpass columns, the figure walking away |
 | 04-crack.png | One panel split by a jagged crack: a tall building above, the figure on the street below |
-| 05-eye.png | A giant pink eye over the street; the figure on a fire escape in a small panel |
+| 05-eye.png | A colossal black creature fills the sky, only its pink slit eye lit, over the street; the figure on a fire escape in a small panel |
 | 06-blinds.png | An office at night in four tall panels; a scaly monster passes behind the blinds against a pink sky |
 | 07-hand.png | A clawed hand crossing the moon, its claws breaking into the panel below, where the figure stands on a rooftop |
