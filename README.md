@@ -33,13 +33,13 @@ All wallpapers are 3840x2160, generated with AI (Codex image generation) in a fl
 
 <table>
   <tr>
-    <td><img src="backgrounds/01-tower.png" alt="A tall panel of a water tower against a cream moon, with two small panels of a rooftop and a woman in a long coat"><br><sub>01 Tower</sub></td>
-    <td><img src="backgrounds/02-overpass.png" alt="Three stacked strips showing street lamps, a huge clawed foot among overpass columns, and a woman walking away"><br><sub>02 Overpass</sub></td>
-    <td><img src="backgrounds/03-crack.png" alt="A panel split by a jagged crack, with a tall building above and a woman on the street below"><br><sub>03 Crack</sub></td>
+    <td><img src="backgrounds/01-mouth.png" alt="A subway entrance inside a colossal pink mouth, with a small panel of a woman on the steps"><br><sub>01 Mouth</sub></td>
+    <td><img src="backgrounds/02-tower.png" alt="A tall panel of a water tower against a cream moon, with two small panels of a rooftop and a woman in a long coat"><br><sub>02 Tower</sub></td>
+    <td><img src="backgrounds/03-overpass.png" alt="Three stacked strips showing street lamps, a huge clawed foot among overpass columns, and a woman walking away"><br><sub>03 Overpass</sub></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/04-eye.png" alt="A giant pink eye over a city street, with a small panel of a woman on a fire escape"><br><sub>04 Eye</sub></td>
-    <td><img src="backgrounds/05-mouth.png" alt="A subway entrance inside a colossal pink mouth, with a small panel of a woman on the steps"><br><sub>05 Mouth</sub></td>
+    <td><img src="backgrounds/04-crack.png" alt="A panel split by a jagged crack, with a tall building above and a woman on the street below"><br><sub>04 Crack</sub></td>
+    <td><img src="backgrounds/05-eye.png" alt="A giant pink eye over a city street, with a small panel of a woman on a fire escape"><br><sub>05 Eye</sub></td>
     <td><img src="backgrounds/06-blinds.png" alt="Four tall panels of an office at night, a woman at a window with a scaly monster passing outside against a pink sky"><br><sub>06 Blinds</sub></td>
   </tr>
   <tr>
