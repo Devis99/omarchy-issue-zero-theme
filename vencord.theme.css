@@ -19,23 +19,23 @@ body {
     color-scheme: dark;
 
     /* Reference palette: black page, paper line, sage, pink. */
-    --machine-void: #020000;
-    --machine-page: #0a0806;
-    --machine-sage: #3f5b52;
-    --machine-black: #11100d;
-    --machine-panel: #201f1b;
-    --machine-panel-raised: #2c2b26;
-    --machine-line: #8e867c;
-    --machine-steel: #ada490;
-    --machine-paper: #d4cab0;
-    --machine-white: #e9ddc1;
-    --machine-signal: #ec2957;
-    --machine-signal-bright: #e9ddc1;
-    --machine-red: #ec2957;
+    --issue-zero-void: #020000;
+    --issue-zero-page: #0a0806;
+    --issue-zero-sage: #3f5b52;
+    --issue-zero-black: #11100d;
+    --issue-zero-panel: #201f1b;
+    --issue-zero-panel-raised: #2c2b26;
+    --issue-zero-line: #8e867c;
+    --issue-zero-steel: #ada490;
+    --issue-zero-paper: #d4cab0;
+    --issue-zero-white: #e9ddc1;
+    --issue-zero-signal: #ec2957;
+    --issue-zero-signal-bright: #e9ddc1;
+    --issue-zero-red: #ec2957;
 
     /* Comic page layer. */
-    --page-human: var(--machine-paper);
-    --page-instrument: var(--machine-steel);
+    --page-human: var(--issue-zero-paper);
+    --page-instrument: var(--issue-zero-steel);
     --page-surplus: rgba(246, 234, 204, 0.12);
 
     /* Midnight layout */
@@ -55,44 +55,44 @@ body {
     --unrounding: on;
     --small-user-panel: on;
     --panel-labels: on;
-    --label-color: var(--machine-steel);
+    --label-color: var(--issue-zero-steel);
 
     /* Midnight color system */
     --colors: on;
-    --text-0: var(--machine-black);
-    --text-1: var(--machine-white);
+    --text-0: var(--issue-zero-black);
+    --text-1: var(--issue-zero-white);
     --text-2: var(--page-human);
     --text-3: var(--page-human);
     --text-4: var(--page-instrument);
     --text-5: #8e867c;
-    --bg-1: var(--machine-panel-raised);
-    --bg-2: var(--machine-panel);
+    --bg-1: var(--issue-zero-panel-raised);
+    --bg-2: var(--issue-zero-panel);
     --bg-3: #201f1b;
-    --bg-4: var(--machine-black);
+    --bg-4: var(--issue-zero-black);
     --hover: rgba(246, 234, 204, 0.055);
     --active: var(--page-surplus);
     --active-2: rgba(246, 234, 204, 0.22);
     --message-hover: rgba(246, 234, 204, 0.035);
-    --accent-1: var(--machine-white);
-    --accent-2: var(--machine-signal);
+    --accent-1: var(--issue-zero-white);
+    --accent-2: var(--issue-zero-signal);
     /* Midnight fills buttons with accent-3/4/5: solid pink with dark text, lighter on hover and click. */
-    --accent-3: var(--machine-signal);
+    --accent-3: var(--issue-zero-signal);
     --accent-4: #f85685;
     --accent-5: #fb5886;
-    --accent-new: var(--machine-red);
+    --accent-new: var(--issue-zero-red);
     --mention: rgba(236, 41, 87, 0.12);
     --mention-hover: rgba(236, 41, 87, 0.18);
     --online: #9cd3af;
-    --dnd: var(--machine-red);
+    --dnd: var(--issue-zero-red);
     --idle: #e9d297;
     --streaming: #ada490;
-    --offline: var(--machine-steel);
+    --offline: var(--issue-zero-steel);
     --border-light: rgba(246, 234, 204, 0.12);
     --border: rgba(246, 234, 204, 0.28);
     --border-hover: rgba(246, 234, 204, 0.60);
     --button-border: transparent;
     --red-1: #f85685;
-    --red-2: var(--machine-red);
+    --red-2: var(--issue-zero-red);
     --red-3: #f25b84;
     --red-4: #fb5886;
     --red-5: #ec2957;
@@ -106,7 +106,7 @@ body {
     --blue-3: #6b9f87;
     --blue-4: #302d22;
     --blue-5: #1f1d13;
-    --yellow-1: var(--machine-signal-bright);
+    --yellow-1: var(--issue-zero-signal-bright);
     --yellow-2: #e9d297;
     --yellow-3: #baad9d;
     --yellow-4: #363226;
@@ -118,28 +118,28 @@ body {
     --purple-5: #201d13;
 
     /* Discord semantic surfaces */
-    --background-primary: var(--machine-black);
+    --background-primary: var(--issue-zero-black);
     --background-secondary: #201f1b;
-    --background-secondary-alt: var(--machine-panel);
-    --background-tertiary: var(--machine-void);
-    --background-accent: var(--machine-line);
-    --background-floating: var(--machine-panel-raised);
-    --background-base-low: var(--machine-black);
-    --background-base-lower: var(--machine-void);
-    --background-base-lowest: var(--machine-void);
-    --background-surface-high: var(--machine-panel);
-    --background-surface-higher: var(--machine-panel-raised);
+    --background-secondary-alt: var(--issue-zero-panel);
+    --background-tertiary: var(--issue-zero-void);
+    --background-accent: var(--issue-zero-line);
+    --background-floating: var(--issue-zero-panel-raised);
+    --background-base-low: var(--issue-zero-black);
+    --background-base-lower: var(--issue-zero-void);
+    --background-base-lowest: var(--issue-zero-void);
+    --background-surface-high: var(--issue-zero-panel);
+    --background-surface-higher: var(--issue-zero-panel-raised);
     --background-surface-highest: #2c2b26;
-    --bg-base-primary: var(--machine-black);
+    --bg-base-primary: var(--issue-zero-black);
     --bg-base-secondary: #201f1b;
-    --bg-base-tertiary: var(--machine-panel);
-    --bg-surface-overlay: var(--machine-panel-raised);
-    --bg-surface-raised: var(--machine-panel-raised);
-    --chat-background-default: var(--machine-black);
-    --home-background: var(--machine-void);
-    --channeltextarea-background: var(--machine-panel);
-    --modal-background: var(--machine-panel-raised);
-    --modal-footer-background: var(--machine-panel);
+    --bg-base-tertiary: var(--issue-zero-panel);
+    --bg-surface-overlay: var(--issue-zero-panel-raised);
+    --bg-surface-raised: var(--issue-zero-panel-raised);
+    --chat-background-default: var(--issue-zero-black);
+    --home-background: var(--issue-zero-void);
+    --channeltextarea-background: var(--issue-zero-panel);
+    --modal-background: var(--issue-zero-panel-raised);
+    --modal-footer-background: var(--issue-zero-panel);
     --background-mentioned: var(--mention);
     --background-mentioned-hover: var(--mention-hover);
     --background-message-hover: var(--message-hover);
@@ -148,35 +148,35 @@ body {
     --background-modifier-active: var(--active);
     --background-modifier-selected: var(--active-2);
     --background-modifier-accent: rgba(246, 234, 204, 0.16);
-    --text-normal: var(--machine-paper);
-    --text-muted: var(--machine-steel);
-    --text-primary: var(--machine-white);
-    --text-secondary: var(--machine-paper);
-    --text-tertiary: var(--machine-steel);
-    --text-link: var(--machine-signal-bright);
-    --text-brand: var(--machine-signal);
-    --header-primary: var(--machine-white);
-    --header-secondary: var(--machine-paper);
-    --interactive-normal: var(--machine-paper);
-    --interactive-hover: var(--machine-white);
-    --interactive-active: var(--machine-signal-bright);
-    --interactive-muted: var(--machine-steel);
-    --channels-default: var(--machine-steel);
-    --channel-icon: var(--machine-paper);
-    --brand-500: var(--machine-signal);
+    --text-normal: var(--issue-zero-paper);
+    --text-muted: var(--issue-zero-steel);
+    --text-primary: var(--issue-zero-white);
+    --text-secondary: var(--issue-zero-paper);
+    --text-tertiary: var(--issue-zero-steel);
+    --text-link: var(--issue-zero-signal-bright);
+    --text-brand: var(--issue-zero-signal);
+    --header-primary: var(--issue-zero-white);
+    --header-secondary: var(--issue-zero-paper);
+    --interactive-normal: var(--issue-zero-paper);
+    --interactive-hover: var(--issue-zero-white);
+    --interactive-active: var(--issue-zero-signal-bright);
+    --interactive-muted: var(--issue-zero-steel);
+    --channels-default: var(--issue-zero-steel);
+    --channel-icon: var(--issue-zero-paper);
+    --brand-500: var(--issue-zero-signal);
     --brand-560: #f85685;
     --brand-600: #fb5886;
-    --control-brand-foreground: var(--machine-signal);
-    --control-brand-foreground-new: var(--machine-signal);
-    --button-danger-background: var(--machine-red);
-    --info-warning-foreground: var(--machine-signal);
+    --control-brand-foreground: var(--issue-zero-signal);
+    --control-brand-foreground-new: var(--issue-zero-signal);
+    --button-danger-background: var(--issue-zero-red);
+    --info-warning-foreground: var(--issue-zero-signal);
     --status-positive: #9cd3af;
-    --status-warning: var(--machine-signal);
-    --status-danger: var(--machine-red);
+    --status-warning: var(--issue-zero-signal);
+    --status-danger: var(--issue-zero-red);
     --status-success: #9cd3af;
-    --border-subtle: var(--machine-paper);
-    --input-background: var(--machine-panel);
-    --input-border: var(--machine-line);
+    --border-subtle: var(--issue-zero-paper);
+    --input-background: var(--issue-zero-panel);
+    --input-border: var(--issue-zero-line);
     --scrollbar-thin-thumb: rgba(246, 234, 204, 0.35);
     --scrollbar-auto-thumb: rgba(246, 234, 204, 0.35);
     --scrollbar-thin-track: transparent;
@@ -195,7 +195,7 @@ body {
 :is(div, span, code, a)::selection,
 .highlight {
     background: rgba(246, 234, 204, 0.28) !important;
-    color: var(--machine-white) !important;
+    color: var(--issue-zero-white) !important;
 }
 
 /* Remove Discord's soft purple leftovers. */
@@ -203,7 +203,7 @@ body,
 [class*="appMount"],
 [class*="bg_"],
 [class*="base_"] {
-    background-color: var(--machine-page) !important;
+    background-color: var(--issue-zero-page) !important;
 }
 
 /* Comic panels: paper frames with black gutters, like the wallpapers. */
@@ -218,7 +218,7 @@ body,
     .membersWrap_c8ffbb,
     .members_c8ffbb
 ) {
-    background-color: var(--machine-black) !important;
+    background-color: var(--issue-zero-black) !important;
     background-image: none !important;
     border-color: var(--border-subtle) !important;
 }
@@ -234,24 +234,24 @@ body,
 }
 
 :is([class*="modeSelected"], [class*="modeConnected"]) a[data-list-item-id^="channels___"] {
-    border-left-color: var(--machine-signal) !important;
+    border-left-color: var(--issue-zero-signal) !important;
 }
 
 :is([class*="modeSelected"], [class*="modeConnected"]) :is([class*="name"], [class*="icon"]),
 :is([class*="modeSelected"], [class*="modeConnected"]) svg {
-    color: var(--machine-signal-bright) !important;
-    fill: var(--machine-signal-bright) !important;
+    color: var(--issue-zero-signal-bright) !important;
+    fill: var(--issue-zero-signal-bright) !important;
 }
 
 :is([class*="unreadBar"], [class*="unreadPill"], [class*="numberBadge"], [class*="textBadge"]) {
-    background: var(--machine-signal) !important;
-    color: var(--machine-black) !important;
+    background: var(--issue-zero-signal) !important;
+    color: var(--issue-zero-black) !important;
 }
 
 /* Thin paper line below channel header and composer. */
 :is([class*="container__9293f"], [class*="themed__9293f"]) {
     border-bottom: 1px solid var(--border) !important;
-    background: var(--machine-black) !important;
+    background: var(--issue-zero-black) !important;
 }
 
 :is([class*="channelTextArea"], [class*="searchBar"], input, textarea):focus-within,
@@ -267,11 +267,11 @@ body,
 
 [class*="mentioned"] {
     background: var(--mention) !important;
-    box-shadow: inset 3px 0 0 var(--machine-signal) !important;
+    box-shadow: inset 3px 0 0 var(--issue-zero-signal) !important;
 }
 
 :is([class*="messageContent"], [class*="markup"]) a {
-    color: var(--machine-signal-bright) !important;
+    color: var(--issue-zero-signal-bright) !important;
     text-decoration: underline !important;
     text-underline-offset: 2px;
 }
@@ -284,20 +284,20 @@ body,
 
 /* Timestamps stay legible but quiet, never pink. */
 :is([class*="timestamp"], [class*="edited"], [class*="botTag"]) {
-    color: var(--machine-steel) !important;
+    color: var(--issue-zero-steel) !important;
     opacity: 0.78;
     letter-spacing: 0.02em;
 }
 
 /* System-looking code and cards. */
 :is(code, pre, [class*="codeContainer"], [class*="embedFull"]) {
-    background: var(--machine-panel-raised) !important;
+    background: var(--issue-zero-panel-raised) !important;
     border: 1px solid var(--border) !important;
     border-left: 3px solid var(--green-2) !important;
 }
 
 [class*="cardPrimary"] {
-    background: var(--machine-panel) !important;
+    background: var(--issue-zero-panel) !important;
     border: 1px solid var(--border-light) !important;
 }
 
@@ -305,13 +305,13 @@ body,
 :is([class*="toolbar"], [class*="chatHeader"]) :is(button, [role="button"]) {
     background: transparent !important;
     border: 1px solid transparent !important;
-    color: var(--machine-paper) !important;
+    color: var(--issue-zero-paper) !important;
 }
 
 :is([class*="toolbar"], [class*="chatHeader"]) :is(button, [role="button"]):hover {
     background: rgba(246, 234, 204, 0.10) !important;
     border-color: var(--border-hover) !important;
-    color: var(--machine-paper) !important;
+    color: var(--issue-zero-paper) !important;
 }
 
 :is([class*="toolbar"], [class*="chatHeader"]) :is(button, [role="button"]):hover svg {
@@ -325,15 +325,15 @@ body,
 }
 
 [class*="membersGroup"] {
-    color: var(--machine-steel) !important;
+    color: var(--issue-zero-steel) !important;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 /* Popouts, menus, and modals get a paper frame and a hard offset shadow. */
 :is([class*="popout_"], [class*="menu_"], [class*="modal_"], [role="dialog"]) {
-    border: 2px solid var(--machine-paper) !important;
-    box-shadow: 4px 4px 0 var(--machine-sage) !important;
+    border: 2px solid var(--issue-zero-paper) !important;
+    box-shadow: 4px 4px 0 var(--issue-zero-sage) !important;
 }
 
 /* Focus rings; no glow everywhere. */
